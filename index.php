@@ -27,7 +27,7 @@
         if(isset($_POST['acao'])){
             $q = urlencode($_POST['q']);
             
-            $url = 	"https://www.googleapis.com/customsearch/v1?key=AIzaSyBvFs1GSytfywS27Q1HXnwavk3btakTcn8&cx=737aa4a414a0d4bb1&q=" . $q;
+            $url = 	"https://www.googleapis.com/customsearch/v1?key=[your-api-key]&cx=737aa4a414a0d4bb1&q=" . $q;
 
             $handle = curl_init($url);
             curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
